@@ -1,0 +1,12 @@
+0xB91a45c19dfd72Fba77eF549C21e66e624621Db8
+0x41C720985a8055f71Fb5b04686f8A25A18eD328A
+0x0f7ACec79C47fA43a005FB0a22db68b3447418ba
+0xB175c687b5D0cCD3C846de76966A99780F221253
+0xbFdC48c44F045D947245cFb63E1Bd1B6fDfA02bd
+
+geth account new --datadir data - создание нового аккаунта
+geth init --datadir data genesis.json - создание генезис блока
+
+geth --datadir data --networkid 220420242306 --unlock 0xB91a45c19dfd72Fba77eF549C21e66e624621Db8 --allow-insecure-unlock --http --http.corsdomain="*" --http.api web3,eth,debug,personal,net,miner --miner.etherbase 0xB91a45c19dfd72Fba77eF549C21e66e624621Db8
+
+geth attach --datadir data ipc:\\.\pipe\geth.ipc
